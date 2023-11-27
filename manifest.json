@@ -1,0 +1,20 @@
+{
+  "name": "SFCC Merchant Datas",
+  "description": "Extension to access to Salesforce B2C Commerce merchant datas",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Abdoulaye Chérif Touré",
+  "action": {
+    "default_popup": "src/index.html",
+    "default_title": "SFCC Merchant Datas"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "assets/icon.png",
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  }
+}
