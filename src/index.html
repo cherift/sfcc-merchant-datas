@@ -5,12 +5,103 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>SFCC Merchant Datas</title>
+      <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
-      <div>
-          <h2>SFCC Merchant Datas</h2>
-          <p>Extension to access to Salesforce B2C Commerce merchant datas</p>
-      </div>
+      <section class="sidebar">
+        <div class="app-name">SFCC Datas</div>
+        <ul class="menu">
+            <li><a class="active" href="#">Dashboard</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Best Promotions</a></li>
+        </ul>
+      </section>
+      <section class="main-content">
+        <div>
+            <h1 class="content-title">Orders Statistics</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-title"><h2>Completed</h2></div>
+                <div class="sales">
+                    <img src="../assets/images/completed.png" alt="completed"/>
+                    <span>12000 $</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><h2>Shipped</h2></div>
+                <div class="sales">
+                    <img src="../assets/images/shipped.png" alt="shipped"/>
+                    <span>12000 $</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><h2>Cancelled</h2></div>
+                <div class="sales">
+                    <img src="../assets/images/cancelled.png" alt="cancelled"/>
+                    <span>12000 $</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><h2>Failed</h2></div>
+                <div class="sales">
+                    <img src="../assets/images/failed.png" alt="failed"/>
+                    <span>12000 $</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="content-title">Orders List</h1>
+        </div>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order No</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Email</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>2023-01-01</td>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>$100.00</td>
+                    <td>En cours</td>
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>2023-01-01</td>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>$100.00</td>
+                    <td>En cours</td>
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>2023-01-01</td>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>$100.00</td>
+                    <td>En cours</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
   </body>
 </html>

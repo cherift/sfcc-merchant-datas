@@ -1,0 +1,121 @@
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--primaryColor);
+  padding: 2%;
+}
+
+.app-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--mainColor);
+  margin-bottom: 10px;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  color: var(--mainColor);
+  font-size: larger;
+  margin: 2px;
+  padding: 5px;
+}
+
+.menu li a:hover, .menu li a.active {
+  color: var(--textColor);
+  border-radius: 5px;
+  border: 1px solid var(--mainColor);
+  background-color: var(--mainColor);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-title {
+  font-weight: lighter;
+  color: var(--textDarkColor);
+  display: inline-block;
+  font-size: 25px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  color: var(--mainColor);
+  padding: 8px;
+  margin: 6px;
+  width: 112px;
+  height: 90px;
+}
+
+.sales {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sales span {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.sales img {
+  width: 18px;
+  height: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid var(--backgroundColor);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  background-color:  var(--primaryColor);
+  color:  var(--mainColor);
+}
+
+td {
+  font-weight: 300;
+  color: var(--textDarkColor);
+}
